@@ -7,8 +7,8 @@ import sys
 
 # Menambahkan path untuk mengimpor fungsi eksternal
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-from utils.count_of_match import count_of_match
-from algorithms.genetic.crossover import *
+from count_of_match import count_of_match
+from crossover import *
 
 class GeneticAlgorithm:
     def __init__(self, crossover_func="randomized", population_size=100, iterations=1000, shuffle=False):
